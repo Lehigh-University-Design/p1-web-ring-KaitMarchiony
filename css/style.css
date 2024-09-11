@@ -45,6 +45,13 @@ body{
     line-break:auto
   }
 
+  .page-wrapper {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    line-break:auto
+  }
+
   #head {
     display: flex;
     justify-content: space-between;
@@ -75,10 +82,12 @@ body{
  
   /*these styles are shown between .post and #post */
   .post, #post {
-    .img container {
-        aspect-ratio: 3/2 ;
+    
+    img{
+      width: 100%;
+      height: auto;
     }
-   
+
     a{
         color: var(--body-color);
         /* text-decoration: none; */
@@ -99,7 +108,7 @@ body{
     text-align: center;
     font-style: var(--light-color);
 
-    .albumP{
+    .albumP {
       height: 200px;
       width: auto;
     }
